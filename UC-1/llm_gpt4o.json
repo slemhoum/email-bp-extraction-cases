@@ -1,0 +1,34 @@
+[
+  {
+    "email_id": "4044221.1075854194521.JavaMail.evans@thyme",
+    "activities": [
+      {
+        "activity": "nominate gas",
+        "business_data": ["meter 1558", "March"],
+        "temporal_expression": "March",
+        "activity_status": "not executed",
+        "speech_act": "Information",
+        "speech_act_reason": "Informing about the absence of nomination for March",
+        "sentence": "Daren - meter 1558 has no nom for March."
+      },
+      {
+        "activity": "flow gas",
+        "business_data": ["meter 1558", "3/1"],
+        "temporal_expression": "3/1",
+        "activity_status": "executed",
+        "speech_act": "Information",
+        "speech_act_reason": "Informing about the flow on 3/1",
+        "sentence": "It has a little over flow on 3/1."
+      },
+      {
+        "activity": "extend deal",
+        "business_data": ["deal 604056"],
+        "temporal_expression": "",
+        "activity_status": "requested",
+        "speech_act": "Request",
+        "speech_act_reason": "Requesting to extend the deal",
+        "sentence": "Could you please extend the deal?"
+      }
+    ]
+  }
+]
