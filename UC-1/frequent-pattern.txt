@@ -1,0 +1,1 @@
+[['extend deal{numeric}{rest}', 6, 'nninformation', ['deal', 'extend'], 'request', ' could you please extend the deal?']]
