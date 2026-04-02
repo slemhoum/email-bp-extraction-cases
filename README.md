@@ -1,5 +1,4 @@
-# Leveraging LLMs for Activity Extraction from
-Email
+# Leveraging LLMs for Activity Extraction from Email
 
 This repository provides supplementary material for the paper:
 
