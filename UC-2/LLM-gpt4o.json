@@ -1,0 +1,44 @@
+[
+{
+"email_id": "3604630.1075854066992.
+JavaMail.evans@thyme",
+"activities": [
+{
+"activity": "flow gas",
+"business_data": ["meter 1517", "14mmbtus", "Mar. 1"],
+"temporal_expression": "Mar. 1",
+"activity_status": "completed",
+"speech_act": "Information",
+"speech_act_reason": "Informing about the flow that occurred on Mar. 1",
+"sentence": "There was flow of 14 mmbtus on Mar. 1."
+},
+{
+"activity": "set up deal",
+"business_data": ["meter 1517", "cover flow", "Mar. 1"],
+"temporal_expression": "",
+"activity_status": "proposed",
+"speech_act": "Request",
+"speech_act_reason": "Request to set up a new deal to cover the flow",
+"sentence": "Could you either set up a new deal to cover this flow or extend the deal from Feb.?"
+},
+{
+"activity": "extend deal",
+"business_data": ["deal number 93804","meter 1517", "Feb."],
+"temporal_expression": "",
+"activity_status": "proposed",
+"speech_act": "Request",
+"speech_act_reason": "Request to extend the existing deal from February",
+"sentence": "Could you either set up a new deal to cover this flow or extend the deal from Feb.?"
+},
+{
+  "activity": "close allocations",
+"business_data": ["today"],
+"temporal_expression": "today",
+"activity_status": "scheduled",
+"speech_act": "Information",
+"speech_act_reason": "Informing about the closure of allocations today",
+"sentence": "Allocations close today."
+}
+]
+}
+]
