@@ -1,0 +1,2 @@
+["[['flow deal{gas}{price}', 5, 'information',['deal', 'flowed'], 'information', 'meter
+numeric last deal numeric for datenumeric flowed datenumeric meter numeric last deal numeric for datenumeric .']]"]
