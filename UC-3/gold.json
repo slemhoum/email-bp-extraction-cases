@@ -1,0 +1,16 @@
+[
+{
+"activities": [
+{
+"activity": "flow gas",
+"speech_act": "Information",
+"sentence": "Meter 1601 last deal 412219 for 10/00 flowed 11/9"
+},
+{
+  "activity": "flow gas",
+ "speech_act": "Information",
+ "sentence": "Meter 5192 last deal 454057 for 10/00. flowed 11/3-4"
+}
+]
+}
+]
