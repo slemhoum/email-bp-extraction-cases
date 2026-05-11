@@ -26,7 +26,7 @@ The repository includes the following components:
   The prompt used for activity and business data extraction.
 
 ### 🔹 Representative Examples
-- `examples/UC-1/`, `UC-2/`, `UC-3/`  
+- `UC-1/`, `UC-2/`, `UC-3/`  
   Each use case contains:
   - `email.txt`: anonymized email content  
   - `gold.json`: manually annotated ground truth  
