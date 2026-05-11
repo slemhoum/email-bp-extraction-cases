@@ -1,0 +1,33 @@
+[
+{
+"email_id": "21217205.1075854106319.JavaMail.evans@thyme",
+"activities": [
+{
+"activity": "flow gas",
+"business_data": [
+"Meter 1601",
+"deal 412219",
+"date 11/9"
+],
+"temporal_expression": "11/9",
+"activity_status": "executed",
+"speech_act": "Information",
+"speech_act_reason": "The sentence reports the actual flow of gas for a specific meter and deal.",
+"sentence": "Meter 1601 last deal 412219 for 10/00 flowed 11/9"
+},
+{
+"activity": "flow gas",
+"business_data": [
+"Meter 5192",
+"deal 454057",
+"date 11/3-4"
+],
+"temporal_expression": "11/3-4",
+"activity_status": "executed",
+"speech_act": "Information",
+"speech_act_reason": "The sentence reports the actual flow of gas for a specific meter and deal.",
+"sentence": "Meter 5192 last deal 454057 for 10/00. flowed 11/3-4"
+}
+]
+}
+]
