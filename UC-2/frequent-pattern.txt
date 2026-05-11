@@ -1,0 +1,5 @@
+ ["[['set_put_fix_determine_adjust deal{numeric}', 14, 'nninformation', ['deal', 'set'], 'request', ' could you either set up a new
+deal to cover this flow or extend the deal from feb.'], ['flow deal{gas}{price}', 17,'information', ['deal', 'flow'], '
+information', ' could you either set up a new deal to cover this flow or extend the deal from feb.'], ['extend deal{numeric}{
+rest}', 18, 'nninformation', ['deal', 'extend'], 'intention', ' could you either set up a new deal to cover this flow or
+extend the deal from feb.']]"]
