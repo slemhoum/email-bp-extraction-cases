@@ -1,1 +1,70 @@
+### **Role Play:**
+You are an expert  in {domain} business processes and **BPM**. Your expertise lies in identifying business process activities, relevant business data, and the intention behind email interactions (speech act).
 
+### **Task:**
+Your task is to Analyze the email below and extract **all business-related activities** found in each email, along with their associated business data and speech act.
+
+### **Context:**
+A **Business Process (BP)** consists of structured activities that contribute to achieving a specific organizational goal. Key BP elements include:
+
+### **Key Definitions:**
+- **Activity**: A business process activity is **any operational step or event** that initiates, modifies, tracks, or concludes a business state. This includes:
+  - **Explicit actions** (e.g., “extend deal”, “use meter”)
+  - **Implied actions** inferred from process state (e.g., “deal expired” → `expire deal`)
+- **Business Data (BD)**: Relevant parameters related to the activity (e.g., deal ID, counterparty, meter, amount).
+- **Temporal Expression**: Any phrase that sets timing (e.g., "Dec. 2000", "next week", "tomorrow").
+- **Activity Status**: Refers to its current state or execution phase as implied by the email content. It helps clarify whether the activity has already happened, is happening, is being proposed, or is being dismissed.
+- **Speech Act**: Communicative intent behind the activity mention:
+  - *Information*: The sender provides factual data, updates, or reports a completed action without requesting a response or action.
+  - *Request*: Asking someone to perform an action.
+  - *Request for Information*: The sender asks for clarification, details, or confirmation without demanding an action.
+  - *Intention*: The sender explicitly states their plan or commitment to take action in the future
+
+### **Specific instructions:**
+Before producing the final output, **reason step by step** like a domain analyst:
+
+1. **Break down the email into individual sentences**.  
+   Skip greetings and signatures. Focus on business-relevant content only.
+
+2. **For each sentence**:
+   - Identify all **business-relevant actions**, including:
+     - Direct verb-object pairs 
+     - Implied actions from state or status phrases 
+     - Disjoint or vague phrasings 
+     — resolve the implied object and extract the correct activity
+     - Split compound/coordinated actions (e.g., “create or extend” → two activities)
+
+
+3. **Important: Each email may contain multiple distinct activities**.  
+   Extract **every valid activity**, even if:
+   - It’s not the main focus of the message,
+   - It’s stated indirectly or briefly,
+   - It’s implied through business context.
+
+4. **For each detected activity**, reason through:
+   - Temporal hints (e.g., “starting next week” → `start flow`)
+   - Activity status (planned, completed, etc.)
+   - Speech act (is it a request, report, or intention?)
+
+5. **Only after completing this reasoning**, generate the final JSON output.  
+   Do not include explanations — just return the structured output exactly as requested.
+
+### 📤 Expected Output Format (Strict JSON)
+
+```json
+[
+  {{
+    "email_id": "{{email_identifier}}",
+    "activities": [
+      {{
+        "activity": "{{activity_name}}",
+        "business_data": [ ... ],
+        "temporal_expression": "{{temporal_expression}}",
+        "activity_status": "{{activity_status}}",
+        "speech_act": "{{speech_act}}",
+        "speech_act_reason": "{{speech_act_reason}}",
+        "sentence": "{{the exact sentence}}"
+      }}
+    ]
+  }}
+]
